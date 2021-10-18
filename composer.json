@@ -1,0 +1,7 @@
+{
+    "name": "gernet/php-aws-tools",
+    "description": "Convenience functions for AWS in PHP",
+    "require": {
+        "aws/aws-sdk-php": "^3.198"
+    }
+}
