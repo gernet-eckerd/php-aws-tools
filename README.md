@@ -12,7 +12,7 @@ Convenience tools for AWS, utilizing the AWS SDK for PHP.
 &lt;?php
 // add these two lines to the top (double-check the path to the aws tools install directory)
 require_once __DIR__.'/../php-aws-tools/get-aws-secret.function.php';
-$db_secret=get_aws_secret('db/caladan/credentials');
+$db_secret=get_aws_secret('your/secret/name/here');
 
 // database settings
 define( 'DB_NAME', $db_secret['dbname'] );
