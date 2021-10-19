@@ -9,7 +9,7 @@ Convenience tools for AWS, utilizing the AWS SDK for PHP.
 ## Add AWS Secret to wp-config.php
 
 <pre lang="php">
-<?php
+&lt;?php
 // add these two lines to the top (double-check the path to the aws tools install directory)
 require_once __DIR__.'/../php-aws-tools/get-aws-secret.function.php';
 $db_secret=get_aws_secret('db/caladan/credentials');
