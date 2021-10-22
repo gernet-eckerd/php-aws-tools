@@ -4,7 +4,11 @@ Convenience tools for AWS, utilizing the AWS SDK for PHP.
 
 ## Installation
 
-<pre>composer install</pre>
+<pre>
+$ sudo chown -R [webuser]:[webgroup] php-aws-tools
+$ cd php-aws-tools
+$ composer install
+</pre>
 
 ## Add AWS Secret to wp-config.php
 
