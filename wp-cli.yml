@@ -1,0 +1,6 @@
+disabled_commands:
+  - config set
+  - config create
+  - config delete
+  - config edit
+  - config shuffle-salts

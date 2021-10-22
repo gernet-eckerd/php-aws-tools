@@ -27,3 +27,7 @@ define( 'DB_HOST', $db_secret['host'].':'.$db_secret['port'] );
 // table prefix can also be kept in the secret
 $table_prefix = $db_secret['tableprefix'];
 </pre>
+
+## Optional: Install wp-cli.yml in WordPress directory
+
+This file will prevent wp-cli from writing to wp-config.php. This can help prevent you shooting yourself in the foot by overwriting the AWS secret array members with static strings.
