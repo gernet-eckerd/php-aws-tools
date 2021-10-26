@@ -7,10 +7,23 @@ Convenience tools for AWS, utilizing the AWS SDK for PHP.
 <pre>
 $ sudo chown -R [webuser]:[webgroup] php-aws-tools
 $ cd php-aws-tools
+$ # optional: get composer
+$ sudo chmod +x install_composer.sh
+$ ./install_composer.sh
 $ composer install
 </pre>
 
 ## Add AWS Secret to wp-config.php
+
+You can either modify the config file directly, or use the conversion script <code>secretify_wp_config.php</code>
+
+<pre>
+$ php secretify_wp_config.php /path/to/wordpress/ instance/name
+$ cd /path/to/wordpress
+$ mv wp-config.php wp-config-plaintext.php; mv wp-config-secrets.php wp-config.php
+</pre>
+
+If the script fails, or you prefer to modify the wp-config.php file directly:
 
 <pre lang="php">
 &lt;?php
